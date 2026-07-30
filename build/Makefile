@@ -153,6 +153,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/best-present-route.dir/build.make CMakeFiles/best-present-route.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+third-party/pugixml.o: third-party/pugixml.cpp.o
+.PHONY : third-party/pugixml.o
+
+# target to build an object file
+third-party/pugixml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/best-present-route.dir/build.make CMakeFiles/best-present-route.dir/third-party/pugixml.cpp.o
+.PHONY : third-party/pugixml.cpp.o
+
+third-party/pugixml.i: third-party/pugixml.cpp.i
+.PHONY : third-party/pugixml.i
+
+# target to preprocess a source file
+third-party/pugixml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/best-present-route.dir/build.make CMakeFiles/best-present-route.dir/third-party/pugixml.cpp.i
+.PHONY : third-party/pugixml.cpp.i
+
+third-party/pugixml.s: third-party/pugixml.cpp.s
+.PHONY : third-party/pugixml.s
+
+# target to generate assembly for a file
+third-party/pugixml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/best-present-route.dir/build.make CMakeFiles/best-present-route.dir/third-party/pugixml.cpp.s
+.PHONY : third-party/pugixml.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... third-party/pugixml.o"
+	@echo "... third-party/pugixml.i"
+	@echo "... third-party/pugixml.s"
 .PHONY : help
 
 
