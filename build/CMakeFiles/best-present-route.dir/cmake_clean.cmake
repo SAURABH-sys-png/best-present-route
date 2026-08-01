@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/best-present-route.dir/src/main.cpp.o"
   "CMakeFiles/best-present-route.dir/src/main.cpp.o.d"
+  "CMakeFiles/best-present-route.dir/src/xml_parser.cpp.o"
+  "CMakeFiles/best-present-route.dir/src/xml_parser.cpp.o.d"
   "CMakeFiles/best-present-route.dir/third-party/pugixml.cpp.o"
   "CMakeFiles/best-present-route.dir/third-party/pugixml.cpp.o.d"
   "best-present-route"

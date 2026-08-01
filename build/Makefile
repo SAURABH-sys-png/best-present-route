@@ -153,6 +153,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/best-present-route.dir/build.make CMakeFiles/best-present-route.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/xml_parser.o: src/xml_parser.cpp.o
+.PHONY : src/xml_parser.o
+
+# target to build an object file
+src/xml_parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/best-present-route.dir/build.make CMakeFiles/best-present-route.dir/src/xml_parser.cpp.o
+.PHONY : src/xml_parser.cpp.o
+
+src/xml_parser.i: src/xml_parser.cpp.i
+.PHONY : src/xml_parser.i
+
+# target to preprocess a source file
+src/xml_parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/best-present-route.dir/build.make CMakeFiles/best-present-route.dir/src/xml_parser.cpp.i
+.PHONY : src/xml_parser.cpp.i
+
+src/xml_parser.s: src/xml_parser.cpp.s
+.PHONY : src/xml_parser.s
+
+# target to generate assembly for a file
+src/xml_parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/best-present-route.dir/build.make CMakeFiles/best-present-route.dir/src/xml_parser.cpp.s
+.PHONY : src/xml_parser.cpp.s
+
 third-party/pugixml.o: third-party/pugixml.cpp.o
 .PHONY : third-party/pugixml.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/xml_parser.o"
+	@echo "... src/xml_parser.i"
+	@echo "... src/xml_parser.s"
 	@echo "... third-party/pugixml.o"
 	@echo "... third-party/pugixml.i"
 	@echo "... third-party/pugixml.s"
