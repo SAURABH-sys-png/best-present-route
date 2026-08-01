@@ -8,10 +8,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(best-present-route
     src/main.cpp
     third-party/pugixml.cpp
+    src/xml_parser.cpp
 )
 
 target_include_directories(best-present-route PRIVATE
     third-party
+    include
 )
 
 target_compile_options(best-present-route PRIVATE

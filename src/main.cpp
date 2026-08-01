@@ -1,27 +1,22 @@
 #include <iostream>
 #include "pugixml.hpp"
+#include "xml_parser.hpp"
 
 int main()
 {
     pugi::xml_document doc;
 
-    pugi::xml_parse_result result = doc.load_file("../data/map.osm");
-
-    if (!result)
+    if (!doc.load_file("../data/map.osm"))
     {
-        std::cout << "Failed to load file\n";
-        return 1;
+        std::cout << "There was an error loading the file.\n";
+        return -1;
     }
 
-    std::cout << "Loaded Successfully!\n";
+    std::cout << "File loaded successfully.\n";
 
-    pugi::xml_node osm = doc.child("osm");
+    NodeMap mp = buildNodeMap(doc);
 
-    std::cout << "Root Node: " << osm.name() << "\n";
+    std::cout << "Loaded " << mp.size() << " nodes.\n";
 
-    for (pugi::xml_node child : osm.children())
-    {
-    std::cout << child.name() << '\n';
-    }
     return 0;
 }
