@@ -153,6 +153,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/best-present-route.dir/build.make CMakeFiles/best-present-route.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/map_to_grp.o: src/map_to_grp.cpp.o
+.PHONY : src/map_to_grp.o
+
+# target to build an object file
+src/map_to_grp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/best-present-route.dir/build.make CMakeFiles/best-present-route.dir/src/map_to_grp.cpp.o
+.PHONY : src/map_to_grp.cpp.o
+
+src/map_to_grp.i: src/map_to_grp.cpp.i
+.PHONY : src/map_to_grp.i
+
+# target to preprocess a source file
+src/map_to_grp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/best-present-route.dir/build.make CMakeFiles/best-present-route.dir/src/map_to_grp.cpp.i
+.PHONY : src/map_to_grp.cpp.i
+
+src/map_to_grp.s: src/map_to_grp.cpp.s
+.PHONY : src/map_to_grp.s
+
+# target to generate assembly for a file
+src/map_to_grp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/best-present-route.dir/build.make CMakeFiles/best-present-route.dir/src/map_to_grp.cpp.s
+.PHONY : src/map_to_grp.cpp.s
+
 src/xml_parser.o: src/xml_parser.cpp.o
 .PHONY : src/xml_parser.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/map_to_grp.o"
+	@echo "... src/map_to_grp.i"
+	@echo "... src/map_to_grp.s"
 	@echo "... src/xml_parser.o"
 	@echo "... src/xml_parser.i"
 	@echo "... src/xml_parser.s"

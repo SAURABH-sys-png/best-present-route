@@ -9,6 +9,7 @@ add_executable(best-present-route
     src/main.cpp
     third-party/pugixml.cpp
     src/xml_parser.cpp
+    src/map_to_grp.cpp
 )
 
 target_include_directories(best-present-route PRIVATE
