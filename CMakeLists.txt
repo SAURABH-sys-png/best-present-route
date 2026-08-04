@@ -10,6 +10,7 @@ add_executable(best-present-route
     third-party/pugixml.cpp
     src/xml_parser.cpp
     src/map_to_grp.cpp
+    src/print_utils.cpp
 )
 
 target_include_directories(best-present-route PRIVATE

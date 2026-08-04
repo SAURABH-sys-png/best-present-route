@@ -30,3 +30,24 @@ std::unordered_map<long long, std::vector<long long>> buildData(const pugi::xml_
 
     return mp;
 }
+
+std::unordered_map<long long, std::vector<std::pair<long long, long long>>> buildAdjacencyList(
+    const std::unordered_map<long long, std::vector<long long>> &way_id_arr_nodes)
+{
+    std::unordered_map<long long, std::vector<std::pair<long long, long long>>> adjacency;
+
+    for (const auto &[wayId, nodeList] : way_id_arr_nodes)
+    {
+        (void)wayId;
+        for (std::size_t i = 0; i + 1 < nodeList.size(); ++i)
+        {
+            const long long fromNode = nodeList[i];
+            const long long toNode = nodeList[i + 1];
+
+            adjacency[fromNode].push_back({toNode, 1});
+            adjacency[toNode].push_back({fromNode, 1});
+        }
+    }
+
+    return adjacency;
+}
